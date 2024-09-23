@@ -10,7 +10,7 @@
     <header></header>
     <main>
         <div id="labelvert">
-
+            <!--
             <div class="itemVert" onclick="atual()">
                 <div class="textVert">Arm</div>
             </div>
@@ -25,67 +25,109 @@
 
             <div class="itemVert">
                 <div class="textVert">notf</div>
-            </div>
+            </div> -->
 
+            <label for="buscatxt">Buscar</label>
+            <input type="text" name="buscatxt" id="buscatxt">
+
+            <div class="altBlock">
+                <div id="reser" class="alt">Reservar</div>
+                <ul class="resitemsblock">
+                    <li onclick="atual()">Datashows</li>
+                    <li>Salas</li>
+                    <li>Cabos</li>
+                </ul>
+            </div>
+            <div class="altBlock">
+                <div class="alt">Administração</div>
+                <ul class="resitemsblock">
+                    <li onclick="atual()">Datashows</li>
+                    <li>Salas</li>
+                    <li>Cabos</li>
+                </ul>
+            </div>
         </div>
 
+        <!--
         <section id="bloco">
             <label for="buscatxt">Buscar</label>
             <input type="text" name="buscatxt" id="buscatxt">
 
-            <div id="reser" class="alt">Reservar</div>
-            <ul id="resitemsblock">
-                <li onclick="atual()">Datashows</li>
-                <li>Salas</li>
-                <li>Cabos</li>
-            </ul>
+            <div class="altBlock">
+                <div id="reser" class="alt">Reservar</div>
+                <ul class="resitemsblock">
+                    <li onclick="atual()">Datashows</li>
+                    <li>Salas</li>
+                    <li>Cabos</li>
+                </ul>
+            </div>
+            <div class="altBlock">
+                <div class="alt">Administração</div>
+                <ul class="resitemsblock">
+                    <li onclick="atual()">Datashows</li>
+                    <li>Salas</li>
+                    <li>Cabos</li>
+                </ul>
+            </div>
         </section>
+        -->
 
         <section id="displayresources">
             <table id="tabledisplayresources">
                 <tr id="title" id="line1">
                     <td>Recurso</td>
                     <td>Status</td>
+                    <td>Está com</td>
                 </tr>
                 <tr  id="line2">
                     <td>Datashow 01</td>
                     <td class="status">Disponível</td>
+                    <td></td>
                 </tr>
                 <tr id="line3">
                     <td>Datashow 02</td>
                     <td class="status">Disponível</td>
+                    <td></td>
                 </tr>
                 <tr id="line4">
                     <td>Datashow 03</td>
-                    <td class="status"> Disponível</td>
+                    <td class="status">Disponível</td>
+                    <td></td>
                 </tr>
                 <tr id="line5">
                     <td>Datashow 04</td>
                     <td class="status">Disponível</td>
+                    <td></td>
                 </tr>
                 <tr id="line6">
                     <td>Datashow 05</td>
                     <td class="status">Disponível</td>
+                    <td></td>
                 </tr>
                 <tr id="line7">
                     <td>Datashow 06</td>
                     <td class="status">Indisponível</td>
+                    <td>Maria</td>
                 </tr>
                 <tr id="line8">
                     <td>Datashow 07</td>
                     <td class="status">Indisponível</td>
+                    <td>José</td>
                 </tr>
                 <tr id="line9">
                     <td>Datashow 08</td>
                     <td class="status">Indisponível</td>
+                    <td>Juliana</td>
                 </tr>
                 <tr id="line10">
                     <td>Datashow 09</td>
                     <td class="status">Disponível</td>
+                    <td></td>
                 </tr>
                 <tr id="line11">
                     <td>Datashow 10</td>
                     <td class="status">Indisponível</td>
+                    <td>Breno</td>
                 </tr>
             </table>
 

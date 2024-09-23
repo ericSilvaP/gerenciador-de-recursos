@@ -47,7 +47,7 @@ header {
 
 div#labelvert {
     background-color: var(--cor4);
-    width: 50px;
+    color: white;
     height: calc(100vh - 90px);
     padding: 20px;
     margin-right: 50px;
@@ -105,18 +105,23 @@ div#reser {
     content: '▲';
 }
 
-ul#resitemsblock {
+ul.resitemsblock {
     list-style: none;
     margin-left: 25px;
+    
 }
 
-ul#resitemsblock > li {
+ul.resitemsblock > li {
     margin: 5px 0 0 0;
     cursor: pointer;
 }
 
-ul#resitemsblock > li:hover {
+ul.resitemsblock > li:hover {
     text-decoration: underline;
+}
+
+.altBlock {
+    margin-bottom: 20px;
 }
 
 /*display conteudo*/
@@ -144,6 +149,7 @@ ul#resitemsblock > li:hover {
 
 tr {
     background-color: green;
+    cursor: pointer;
 }
 
 tr:hover {
@@ -153,23 +159,28 @@ tr:hover {
 
 tr#line7 {
     background-color: red;
+    cursor: default;
 }
 
 tr#line8 {
     background-color: red;
+    cursor: default;
 }
 
 tr#line9 {
     background-color: red;
+    cursor: default;
 }
 
 tr#line11 {
     background-color: red;
+    cursor: default;
 }
 
+/*
 tr#line7:hover {
     background-color: rgb(143, 2, 2);
-}
+} 
 
 tr#line8:hover {
     background-color: rgb(143, 2, 2);
@@ -182,6 +193,7 @@ tr#line9:hover {
 tr#line11:hover {
     background-color: rgb(143, 2, 2);
 }
+*/
 
 td {
     padding: 3.5px;
