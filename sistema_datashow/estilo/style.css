@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #801dcc;
+    --cor2: #EB018A;
+    --cor3: #CC02E3;
+    --cor4: #073C73;
+    --cor5: #E30302;
+    --cor6: #D44EE3;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*tags globais*/
+html, body {
+   
+}
+
+main {
+    display: flex;
+}
+
+/*
+div#selecao {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 200px;
+    width: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: yellow;
+}
+*/
+
+/*labels*/
+header {
+    background-color: var(--cor4);
+    height: 50px;
+}
+
+div#labelvert {
+    background-color: var(--cor4);
+    width: 50px;
+    height: calc(100vh - 90px);
+    padding: 20px;
+    margin-right: 50px;
+}
+
+.itemVert {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    margin: 0 0px 20px 0;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.itemVert:hover {
+    border: 2px solid darkgray;
+    transition: 150ms;
+}
+
+.textVert {
+    position: relative;
+    top: 44%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+}
+
+/*conteudo*/
+/*menu bloco*/
+section#bloco {
+    background-color: var(--cor4);
+    color: white;
+    width: 250px;
+    height: 350px;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+#bloco > input {
+    border-radius: 5px;
+    border: 0;
+}
+
+div#reser {
+    margin-top: 50px;
+}
+
+.alt {
+    cursor: pointer;
+}
+
+.alt::after {
+    content: '▲';
+}
+
+ul#resitemsblock {
+    list-style: none;
+    margin-left: 25px;
+}
+
+ul#resitemsblock > li {
+    margin: 5px 0 0 0;
+    cursor: pointer;
+}
+
+ul#resitemsblock > li:hover {
+    text-decoration: underline;
+}
+
+/*display conteudo*/
+#displayresources {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+    background-color: orange;
+    height: 350px;
+    margin: 50px 0 0 50px;
+    border-radius: 25px;
+    padding: 50px;
+}
+
+/*tabela display*/
+#tabledisplayresources {
+    width: 300px;
+    border-collapse: collapse;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+tr {
+    background-color: green;
+}
+
+tr:hover {
+    transition: 300ms;
+    background-color: rgb(1, 61, 1);
+}
+
+tr#line7 {
+    background-color: red;
+}
+
+tr#line8 {
+    background-color: red;
+}
+
+tr#line9 {
+    background-color: red;
+}
+
+tr#line11 {
+    background-color: red;
+}
+
+tr#line7:hover {
+    background-color: rgb(143, 2, 2);
+}
+
+tr#line8:hover {
+    background-color: rgb(143, 2, 2);
+}
+
+tr#line9:hover {
+    background-color: rgb(143, 2, 2);
+}
+
+tr#line11:hover {
+    background-color: rgb(143, 2, 2);
+}
+
+td {
+    padding: 3.5px;
+}
+
+tr#title {
+    font-weight: bold;
+    background-color: black;
+}
+
+/*botao*/
+#displayresources > input {
+    border: 0;
+    padding: 3.5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/*section {
+    padding: 20px;
+    cursor: pointer; 
+    background-color: red;
+}*/
