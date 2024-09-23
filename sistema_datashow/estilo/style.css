@@ -16,9 +16,6 @@
 }
 
 /*tags globais*/
-html, body {
-   
-}
 
 main {
     display: flex;
@@ -51,6 +48,7 @@ div#labelvert {
     height: calc(100vh - 90px);
     padding: 20px;
     margin-right: 50px;
+    font-size: 1.2em;
 }
 
 .itemVert {
@@ -136,6 +134,7 @@ ul.resitemsblock > li:hover {
     margin: 50px 0 0 50px;
     border-radius: 25px;
     padding: 50px;
+    width: 700px;
 }
 
 /*tabela display*/
@@ -145,6 +144,7 @@ ul.resitemsblock > li:hover {
     text-align: center;
     position: relative;
     width: 100%;
+    font-size: 1.1em;
 }
 
 tr {
