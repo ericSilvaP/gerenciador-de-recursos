@@ -106,12 +106,10 @@ div#reser {
 ul.resitemsblock {
     list-style: none;
     margin-left: 25px;
-    
 }
 
 ul.resitemsblock > li {
     margin: 5px 0 0 0;
-    cursor: pointer;
 }
 
 ul.resitemsblock > li:hover {
@@ -120,6 +118,11 @@ ul.resitemsblock > li:hover {
 
 .altBlock {
     margin-bottom: 20px;
+}
+
+li > a {
+    color: white;
+    text-decoration: none;
 }
 
 /*display conteudo*/
@@ -168,7 +171,7 @@ tr#line8 {
 }
 
 tr#line9 {
-    background-color: red;
+    background-color: darkorange;
     cursor: default;
 }
 
@@ -217,3 +220,19 @@ tr#title {
     cursor: pointer; 
     background-color: red;
 }*/
+
+aside {
+    flex-basis: 500px;
+    margin-top: 10px;
+}
+
+aside > select {
+    height: 1.7em;
+}
+
+aside > input {
+    border: 0;
+    padding: 3.5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
