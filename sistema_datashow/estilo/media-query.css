@@ -18,4 +18,13 @@
         flex-basis: 100vw;
         cursor: pointer;
     }
+
+    main {
+        flex-direction: column; /* Colocar elementos em coluna */
+    }
+
+    #labelvert {
+        margin: 0; /* Remover margens */
+        width: 100%; /* Largura total em dispositivos móveis */
+    }
 }
