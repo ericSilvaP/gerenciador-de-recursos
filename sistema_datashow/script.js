@@ -48,3 +48,45 @@ function clickTr() {
         }
     }
 }
+
+function clickMenu() {
+    if (labelvert.style.display == "block") {
+        labelvert.style.display = "none"
+    } else {
+        labelvert.style.display = "block"
+    }
+}
+
+function mudaTamanho() {
+    if (window.innerWidth <= "500") {
+        burger.style.display = "block"
+        imenu.style.display = "none"
+    } else if (window.innerWidth > "500") {
+        burger.style.display = "none"
+        imenu.style.display = "flex"
+    }
+}
+
+ // Obtém todas as linhas da tabela
+ const rows = document.querySelectorAll('tbody tr');
+
+ // Adiciona um evento de clique em cada linha
+ rows.forEach(row => {
+     row.addEventListener('click', function() {
+         // Remove a classe 'selected' de todas as linhas
+         rows.forEach(r => r.classList.remove('selected'));
+         // Adiciona a classe 'selected' à linha clicada
+         this.classList.add('selected');
+     });
+ });
+
+let removeButton = document.querySelector("input#rm")
+
+removeButton.addEventListener('click', function() {
+    const selectedRow = document.querySelector('tbody tr.selected');
+    if (selectedRow) {
+        selectedRow.remove(); // Remove a linha selecionada
+    } else {
+        alert('Nenhuma linha selecionada!');
+    }
+});

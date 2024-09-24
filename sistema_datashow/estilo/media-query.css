@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 728px) {
+    #labelvert {
+        display: none;
+    }
+
+    #displayresources {
+        margin: auto;
+        margin: 50px 25px 0 25px
+    }
+
+    div#burger {
+        display: block;
+        text-align: center;
+        font-size: 2.5em;
+        border: 1px dotted black;
+        flex-basis: 100vw;
+        cursor: pointer;
+    }
+}

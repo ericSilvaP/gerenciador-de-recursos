@@ -14,24 +14,24 @@
             <input type="text" name="buscatxt" id="buscatxt">
 
             <div class="altBlock">
-                <div id="reser" class="alt">Reservar</div>
-                <ul class="resitemsblock">
+                <div id="reser" class="alt" onclick="altTitle01()">Reservar</div>
+                <ul class="resitemsblock" id="altItems01">
                     <li><a href="./index.html">Datashows</a></li>
                     <li><a href="">Salas</a></li>
                     <li><a href="">Cabos</a></li>
                 </ul>
             </div>
             <div class="altBlock">
-                <div class="alt">Administração</div>
-                <ul class="resitemsblock">
+                <div class="alt" onclick="altTitle02()">Administração</div>
+                <ul class="resitemsblock" id="altItems02">
                     <li><a href="./adm.html">Datashows</a></li>
                     <li><a href="">Salas</a></li>
                     <li><a href="">Cabos</a></li>
                 </ul>
             </div>
             <div class="altBlock"></div>
-                <div class="alt">Notificações</div>
-                <ul class="resitemsblock">
+                <div class="alt" onclick="altTitle03()">Notificações</div>
+                <ul class="resitemsblock" id="altItems03">
                     <li><a href="">Devolução</a></li>
                     <li><a href="./agendados.html">Agendados</a></li>
                 </ul>
@@ -50,68 +50,64 @@
                     <tr id="line2">
                         <td>Datashow 01</td>
                         <td class="status">Disponível</td>
-                        <td></td>
-                        <td></td>
+                        <td>--</td>
+                        <td>--</td>
                     </tr>
                     <tr id="line3">
                         <td>Datashow 02</td>
                         <td class="status">Disponível</td>
-                        <td></td>
-                        <td></td>
+                        <td>--</td>
+                        <td>--</td>
                     </tr>
                     <tr id="line4">
                         <td>Datashow 03</td>
                         <td class="status">Disponível</td>
-                        <td></td>
-                        <td></td>
+                        <td>--</td>
+                        <td>--</td>
                     </tr>
                     <tr id="line5">
                         <td>Datashow 04</td>
                         <td class="status">Disponível</td>
-                        <td></td>
-                        <td></td>
+                        <td>--</td>
+                        <td>--</td>
                     </tr>
                     <tr id="line6">
                         <td>Datashow 05</td>
                         <td class="status">Disponível</td>
-                        <td></td>
-                        <td></td>
+                        <td>--</td>
+                        <td>--</td>
                     </tr>
                     <tr id="line7">
                         <td>Datashow 06</td>
                         <td class="status">Indisponível</td>
                         <td>Maria</td>
-                        <td></td>
+                        <td>--</td>
                     </tr>
                     <tr id="line8">
                         <td>Datashow 07</td>
                         <td class="status">Indisponível</td>
                         <td>José</td>
-                        <td></td>
+                        <td>--</td>
                     </tr>
                     <tr id="line9">
                         <td>Datashow 08</td>
                         <td class="status">Em manutenção</td>
-                        <td></td>
+                        <td>--</td>
                         <td>Faltando cabo</td>
                     </tr>
                     <tr id="line10">
                         <td>Datashow 09</td>
                         <td class="status">Disponível</td>
-                        <td></td>
-                        <td></td>
+                        <td>--</td>
+                        <td>--</td>
                     </tr>
                     <tr id="line11">
                         <td>Datashow 10</td>
                         <td class="status">Indisponível</td>
                         <td>Breno</td>
-                        <td></td>
+                        <td>--</td>
                     </tr>
                 </tbody>
-                <tr id="title" id="line1">
-                    
-                </tr>
-                
             </table>
             <aside>
                 <select name="selStatus" id="selStatus">
@@ -126,10 +122,12 @@
                 <input type="button" value="Atualizar Problema">
             </aside>
             <aside>
-                <input type="button" value="Remover">
-                <input type="button" value="Adicionar">
+                <input type="button" value="Remover recurso" id="rm">
+                <input type="button" value="Adicionar recurso">
+                <input type="button" value="Cancelar agendamento">
             </aside>
         </section>
-        <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

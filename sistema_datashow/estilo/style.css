@@ -21,6 +21,9 @@ main {
     display: flex;
 }
 
+div#burger {
+    display: none;
+}
 /*
 div#selecao {
     display: flex;
@@ -129,15 +132,14 @@ li > a {
 #displayresources {
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    align-content: flex-start;
     justify-content: flex-start;
     color: white;
     background-color: orange;
-   
     margin: 50px 0 0 50px;
     border-radius: 25px;
     padding: 50px;
-    width: 700px;
+   
 }
 
 /*tabela display*/
@@ -148,6 +150,7 @@ li > a {
     position: relative;
     width: 100%;
     font-size: 1.1em;
+    border: 2px solid black;
 }
 
 tr {
@@ -158,6 +161,11 @@ tr {
 tr:hover {
     transition: 300ms;
     background-color: rgb(1, 61, 1);
+}
+
+.selected {
+    background-color: white;
+    color: black;
 }
 
 tr#line7 {

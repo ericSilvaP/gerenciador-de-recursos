@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header></header>
     <main>
-        
         <div id="labelvert">
             <!--
             <div class="itemVert" onclick="atual()">
@@ -57,6 +58,7 @@
             </div>
         </div>
 
+        <div id="burger" class="material-symbols-outlined" onclick="clickMenu()">Menu</div>
         <!--
         <section id="bloco">
             <label for="buscatxt">Buscar</label>
@@ -87,55 +89,58 @@
                     <th scope="col">Recurso</th>
                     <th scope="col">Status</th>
                 </thead>
-                <tbody><tr id="line2" value="1"></tr>
-                    <td>Datashow 01</td>
-                    <td class="status">Disponível</td>
+                <tbody>
+                    <tr id="line2" value="1">
+                        <td>Datashow 01</td>
+                        <td class="status">Disponível</td>
+                    </tr>
                     
-                </tr>
-                <tr id="line3" value="1">
-                    <td>Datashow 02</td>
-                    <td class="status">Disponível</td>
-                   
-                </tr>
-                <tr id="line4" value="1">
-                    <td>Datashow 03</td>
-                    <td class="status">Disponível</td>
-                   
-                </tr>
-                <tr id="line5" value="1">
-                    <td>Datashow 04</td>
-                    <td class="status">Disponível</td>
-                   
-                </tr>
-                <tr id="line6" value="1">
-                    <td>Datashow 05</td>
-                    <td class="status">Disponível</td>
-                  
-                </tr>
-                <tr id="line7" value="1">
-                    <td>Datashow 06</td>
-                    <td class="status">Indisponível</td>
-                </tr>
-                <tr id="line8" value="1">
-                    <td>Datashow 07</td>
-                    <td class="status">Indisponível</td>
-                    
-                </tr>
-                <tr id="line9" value="1">
-                    <td>Datashow 08</td>
-                    <td class="status">Em manutenção</td>
-                    
-                </tr>
-                <tr id="line10" value="1">
-                    <td>Datashow 09</td>
-                    <td class="status">Disponível</td>
-                    
-                </tr>
-                <tr id="line11" value="1">
-                    <td>Datashow 10</td>
-                    <td class="status">Indisponível</td>
-                    
-                </tr></tbody>
+                    <tr id="line3" value="1">
+                        <td>Datashow 02</td>
+                        <td class="status">Disponível</td>
+                    </tr>
+
+                    <tr id="line4" value="1">
+                        <td>Datashow 03</td>
+                        <td class="status">Disponível</td>
+                    </tr>
+
+                    <tr id="line5" value="1">
+                        <td>Datashow 04</td>
+                        <td class="status">Disponível</td>
+                    </tr>
+
+                    <tr id="line6" value="1">
+                        <td>Datashow 05</td>
+                        <td class="status">Disponível</td>
+                    </tr>
+
+                    <!--<tr id="line7" value="1">
+                        <td>Datashow 06</td>
+                        <td class="status">Indisponível</td>
+                    </tr>-->
+
+                    <!--<tr id="line8" value="1">
+                        <td>Datashow 07</td>
+                        <td class="status">Indisponível</td>
+                    </tr>-->
+
+                    <!--<tr id="line9" value="1">
+                        <td>Datashow 08</td>
+                        <td class="status">Em manutenção</td>
+                    </tr>-->
+
+                    <tr id="line10" value="1">
+                        <td>Datashow 09</td>
+                        <td class="status">Disponível</td>
+                    </tr>
+
+                    <!--<tr id="line11" value="1">
+                        <td>Datashow 10</td>
+                        <td class="status">Indisponível</td>
+                    </tr>-->
+
+                </tbody>
                 
             </table>
 
