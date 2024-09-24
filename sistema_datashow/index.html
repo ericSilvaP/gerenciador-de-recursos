@@ -9,6 +9,7 @@
 <body>
     <header></header>
     <main>
+        
         <div id="labelvert">
             <!--
             <div class="itemVert" onclick="atual()">
@@ -31,26 +32,27 @@
             <input type="text" name="buscatxt" id="buscatxt">
 
             <div class="altBlock">
-                <div id="reser" class="alt">Reservar</div>
-                <ul class="resitemsblock">
+                <div id="reser" class="alt" onclick="altTitle01()">Reservar</div>
+                <ul class="resitemsblock" id="altItems01">
                     <li><a href="./index.html">Datashows</a></li>
                     <li><a href="">Salas</a></li>
                     <li><a href="">Cabos</a></li>
                 </ul>
             </div>
             <div class="altBlock">
-                <div class="alt">Administração</div>
-                <ul class="resitemsblock">
+                <div class="alt" id="l" onclick="altTitle02()">Administração</div>
+                
+                <ul class="resitemsblock" id="altItems02">
                     <li><a href="./adm.html">Datashows</a></li>
                     <li><a href="">Salas</a></li>
                     <li><a href="">Cabos</a></li>
                 </ul> 
             </div>
             <div class="altBlock">
-                <div class="alt">Notificações</div>
-                <ul class="resitemsblock">
+                <div class="alt" onclick="altTitle03()">Notificações</div>
+                <ul class="resitemsblock" id="altItems03">
                     <li><a href="">Devolução</a></li>
-                    <li><a href="">Agendados</a></li>
+                    <li><a href="./agendados.html">Agendados</a></li>
                 </ul>
             </div>
         </div>
@@ -80,65 +82,77 @@
         -->
 
         <section id="displayresources">
-            <table id="tabledisplayresources">
-                <tr id="title" id="line1">
-                    <td>Recurso</td>
-                    <td>Status</td>
-                    <td>Está com</td>
-                </tr>
-                <tr  id="line2">
+            <table id="tabledisplayresources"  onclick="clickTr()">
+                <thead id="line1" id="title">
+                    <th scope="col">Recurso</th>
+                    <th scope="col">Status</th>
+                </thead>
+                <tbody><tr id="line2" value="1"></tr>
                     <td>Datashow 01</td>
                     <td class="status">Disponível</td>
-                    <td></td>
+                    
                 </tr>
-                <tr id="line3">
+                <tr id="line3" value="1">
                     <td>Datashow 02</td>
                     <td class="status">Disponível</td>
-                    <td></td>
+                   
                 </tr>
-                <tr id="line4">
+                <tr id="line4" value="1">
                     <td>Datashow 03</td>
                     <td class="status">Disponível</td>
-                    <td></td>
+                   
                 </tr>
-                <tr id="line5">
+                <tr id="line5" value="1">
                     <td>Datashow 04</td>
                     <td class="status">Disponível</td>
-                    <td></td>
+                   
                 </tr>
-                <tr id="line6">
+                <tr id="line6" value="1">
                     <td>Datashow 05</td>
                     <td class="status">Disponível</td>
-                    <td></td>
+                  
                 </tr>
-                <tr id="line7">
+                <tr id="line7" value="1">
                     <td>Datashow 06</td>
                     <td class="status">Indisponível</td>
-                    <td>Maria</td>
                 </tr>
-                <tr id="line8">
+                <tr id="line8" value="1">
                     <td>Datashow 07</td>
                     <td class="status">Indisponível</td>
-                    <td>José</td>
+                    
                 </tr>
-                <tr id="line9">
+                <tr id="line9" value="1">
                     <td>Datashow 08</td>
                     <td class="status">Em manutenção</td>
-                    <td></td>
+                    
                 </tr>
-                <tr id="line10">
+                <tr id="line10" value="1">
                     <td>Datashow 09</td>
                     <td class="status">Disponível</td>
-                    <td></td>
+                    
                 </tr>
-                <tr id="line11">
+                <tr id="line11" value="1">
                     <td>Datashow 10</td>
                     <td class="status">Indisponível</td>
-                    <td>Breno</td>
-                </tr>
+                    
+                </tr></tbody>
+                
             </table>
 
-            <input type="button" value="Solicitar">
+            <aside>
+                <label for="inpdate">Selecionar dia de agendamento: </label>
+                <input type="date" name="inpdate" id="inpdate">
+            </aside>
+            <aside>
+                <label for="selhor">Horário</label>
+                <select name="selhor" id="selhor">
+                    <option value="">08:00 - 10:00</option>
+                    <option value="">10:00 - 12:00</option>
+                    <option value="">14:00 - 16:00</option>
+                    <option value="">16:00 - 18:00</option>
+                </select>
+            </aside>
+            <aside><input type="button" value="Solicitar"></aside>
         </section>
 
         <!--

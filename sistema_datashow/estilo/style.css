@@ -100,7 +100,7 @@ div#reser {
 }
 
 .alt::after {
-    content: '▲';
+    content: attr(data-content);
 }
 
 ul.resitemsblock {
@@ -133,7 +133,7 @@ li > a {
     justify-content: flex-start;
     color: white;
     background-color: orange;
-    height: 350px;
+   
     margin: 50px 0 0 50px;
     border-radius: 25px;
     padding: 50px;
@@ -202,7 +202,7 @@ td {
     padding: 3.5px;
 }
 
-tr#title {
+th {
     font-weight: bold;
     background-color: black;
 }
@@ -221,13 +221,14 @@ tr#title {
     background-color: red;
 }*/
 
+/*elementos abaixo da tabela*/
 aside {
     flex-basis: 500px;
     margin-top: 10px;
 }
 
 aside > select {
-    height: 1.7em;
+    height: 25px;
 }
 
 aside > input {

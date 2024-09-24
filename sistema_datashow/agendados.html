@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div id="labelvert">
+            <label for="buscatxt">Buscar</label>
+            <input type="text" name="buscatxt" id="buscatxt">
+
+            <div class="altBlock">
+                <div id="reser" class="alt">Reservar</div>
+                <ul class="resitemsblock">
+                    <li><a href="./index.html">Datashows</a></li>
+                    <li><a href="">Salas</a></li>
+                    <li><a href="">Cabos</a></li>
+                </ul>
+            </div>
+            <div class="altBlock">
+                <div class="alt">Administração</div>
+                <ul class="resitemsblock">
+                    <li><a href="./adm.html">Datashows</a></li>
+                    <li><a href="">Salas</a></li>
+                    <li><a href="">Cabos</a></li>
+                </ul>
+            </div>
+            <div class="altBlock"></div>
+                <div class="alt">Notificações</div>
+                <ul class="resitemsblock">
+                    <li><a href="">Devolução</a></li>
+                    <li><a href="">Agendados</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section id="displayresources">
+            <table id="tabledisplayresources" >
+                <thead>
+                    <th scope="col">Recurso</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Hora</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Datashow 9</td>
+                        <td>12/10/2024</td>
+                        <td>10:00 - 12:00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <aside>
+                <input type="button" value="Cancelar">
+            </aside>
+        </section>
+        <script src="script.js"></script>
+</body>
+</html>
