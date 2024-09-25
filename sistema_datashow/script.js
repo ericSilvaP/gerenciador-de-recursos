@@ -94,5 +94,5 @@ let negarButton = document.querySelector("input#rm1")
 let afirmButton = document.querySelector("input#rm2")
 
 removeButton.addEventListener('click', remove);
-negarButton.addEventListener('click', remove());
-afirmButton.addEventListener('click', remove());
+negarButton.addEventListener('click', remove);
+afirmButton.addEventListener('click', remove);
