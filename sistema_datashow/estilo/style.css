@@ -24,20 +24,6 @@ main {
 div#burger {
     display: none;
 }
-/*
-div#selecao {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    height: 200px;
-    width: 500px;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: yellow;
-}
-*/
 
 /*labels*/
 header {
@@ -50,7 +36,6 @@ div#labelvert {
     color: white;
     height: calc(100vh - 90px);
     padding: 20px;
-    margin-right: 50px;
     font-size: 1.2em;
 }
 
@@ -77,23 +62,18 @@ div#labelvert {
     transform: translate(-25%, -25%);
 }
 
+.material-symbols-outlined {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.material-symbols-outlined:hover {
+    color: lightgray;
+    transition: 300ms;
+}
+
 /*conteudo*/
 /*menu bloco*/
-section#bloco {
-    background-color: var(--cor4);
-    color: white;
-    width: 250px;
-    height: 350px;
-    margin-top: 50px;
-    padding: 50px;
-    border-radius: 25px;
-}
-
-#bloco > input {
-    border-radius: 5px;
-    border: 0;
-}
-
 div#reser {
     margin-top: 50px;
 }
@@ -131,26 +111,26 @@ li > a {
 /*display conteudo*/
 #displayresources {
     display: flex;
-    flex-flow: row wrap;
-    align-content: flex-start;
-    justify-content: flex-start;
+    flex-flow: row wrap;   
     color: white;
     background-color: orange;
-    margin: 50px 0 0 50px;
+    margin: 50px auto 20px auto;
     border-radius: 25px;
-    padding: 50px;
-   
-}
+    padding: 45px;
+    position: relative;
+    max-width: 60%;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.829);
+}    
 
 /*tabela display*/
 #tabledisplayresources {
-    width: 300px;
     border-collapse: collapse;
     text-align: center;
     position: relative;
-    width: 100%;
+    width: 85%;
     font-size: 1.1em;
     border: 2px solid black;
+    margin: auto;
 }
 
 tr {
@@ -163,17 +143,12 @@ tr:hover {
     background-color: rgb(1, 61, 1);
 }
 
-.selected {
+.selected, .selected:hover {
     background-color: white;
     color: black;
 }
 
-tr#line7 {
-    background-color: red;
-    cursor: default;
-}
-
-tr#line8 {
+tr#line7, tr#line8, tr#line11 {
     background-color: red;
     cursor: default;
 }
@@ -182,29 +157,6 @@ tr#line9 {
     background-color: darkorange;
     cursor: default;
 }
-
-tr#line11 {
-    background-color: red;
-    cursor: default;
-}
-
-/*
-tr#line7:hover {
-    background-color: rgb(143, 2, 2);
-} 
-
-tr#line8:hover {
-    background-color: rgb(143, 2, 2);
-}
-
-tr#line9:hover {
-    background-color: rgb(143, 2, 2);
-}
-
-tr#line11:hover {
-    background-color: rgb(143, 2, 2);
-}
-*/
 
 td {
     padding: 3.5px;
@@ -223,16 +175,12 @@ th {
     cursor: pointer;
 }
 
-/*section {
-    padding: 20px;
-    cursor: pointer; 
-    background-color: red;
-}*/
-
 /*elementos abaixo da tabela*/
 aside {
     flex-basis: 500px;
     margin-top: 10px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
 }
 
 aside > select {

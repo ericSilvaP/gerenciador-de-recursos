@@ -80,13 +80,19 @@ function mudaTamanho() {
      });
  });
 
-let removeButton = document.querySelector("input#rm")
-
-removeButton.addEventListener('click', function() {
+function remove() {
     const selectedRow = document.querySelector('tbody tr.selected');
     if (selectedRow) {
         selectedRow.remove(); // Remove a linha selecionada
     } else {
         alert('Nenhuma linha selecionada!');
     }
-});
+}
+
+let removeButton = document.querySelector("input#rm")
+let negarButton = document.querySelector("input#rm1")
+let afirmButton = document.querySelector("input#rm2")
+
+removeButton.addEventListener('click', remove);
+negarButton.addEventListener('click', remove());
+afirmButton.addEventListener('click', remove());

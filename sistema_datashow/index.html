@@ -5,32 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento</title>
     <link rel="stylesheet" href="estilo/style.css">
-    <link rel="stylesheet" href="estilo/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <header></header>
     <main>
         <div id="labelvert">
-            <!--
-            <div class="itemVert" onclick="atual()">
-                <div class="textVert">Arm</div>
-            </div>
 
-            <div class="itemVert">
-                <div class="textVert">monit</div>
-            </div>
-
-            <div class="itemVert">
-                <div class="textVert">manu</div>
-            </div>
-
-            <div class="itemVert">
-                <div class="textVert">notf</div>
-            </div> -->
-
-            <label for="buscatxt">Buscar</label>
-            <input type="text" name="buscatxt" id="buscatxt">
+            <input type="text" name="buscatxt" id="buscatxt" placeholder="Buscar funcionalidade">
+            <label for="buscatxt" class="material-symbols-outlined">search</label>
 
             <div class="altBlock">
                 <div id="reser" class="alt" onclick="altTitle01()">Reservar</div>
@@ -47,6 +31,7 @@
                     <li><a href="./adm.html">Datashows</a></li>
                     <li><a href="">Salas</a></li>
                     <li><a href="">Cabos</a></li>
+                    <li><a href="./solicitacao.html">Solicitações</a></li>
                 </ul> 
             </div>
             <div class="altBlock">
@@ -144,20 +129,24 @@
                 
             </table>
 
-            <aside>
-                <label for="inpdate">Selecionar dia de agendamento: </label>
-                <input type="date" name="inpdate" id="inpdate">
-            </aside>
-            <aside>
-                <label for="selhor">Horário</label>
-                <select name="selhor" id="selhor">
-                    <option value="">08:00 - 10:00</option>
-                    <option value="">10:00 - 12:00</option>
-                    <option value="">14:00 - 16:00</option>
-                    <option value="">16:00 - 18:00</option>
-                </select>
-            </aside>
-            <aside><input type="button" value="Solicitar"></aside>
+            <div id="buttons">
+                <aside>
+                    <label for="inpdate">Selecionar dia de agendamento: </label>
+                    <input type="date" name="inpdate" id="inpdate">
+                </aside>
+                <aside>
+                    <label for="selhor">Horário</label>
+                    <select name="selhor" id="selhor">
+                        <option value="">08:00 - 10:00</option>
+                        <option value="">10:00 - 12:00</option>
+                        <option value="">14:00 - 16:00</option>
+                        <option value="">16:00 - 18:00</option>
+                    </select>
+                </aside>
+                <aside>
+                    <input type="button" value="Solicitar">
+                </aside>
+            </div>
         </section>
 
         <!--
