@@ -20,6 +20,7 @@
 
 main {
     display: flex;
+
 }
 
 div#burger {
@@ -33,6 +34,8 @@ header {
 }
 
 div#labelvert {
+    display: flex;
+    flex-flow: column wrap;
     background-color: var(--cor4);
     color: white;
     height: calc(100vh - 90px);
