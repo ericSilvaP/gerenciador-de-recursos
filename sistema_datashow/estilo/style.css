@@ -32,16 +32,23 @@ header {
     height: 50px;
 }
 
-div#labelvert {
-    display: flex;
-    flex-flow: column wrap;
+div#labelvert, div#labelhori {
     background-color: var(--cor4);
     color: white;
-    height: 100vh;
-    padding: 50px 20px 20px 20px;
+    
     font-size: 1.2em;
+}
+
+div#labelhori {
+    display: none;
+}
+
+div#labelvert {
+    padding: 50px 20px 20px 20px;
+    display: flex;
+    height: 100vh;
+    flex-flow: column wrap;
     position: fixed;
-    margin-right: 100px;
 }
 
 .itemVert {
@@ -187,6 +194,7 @@ aside {
     margin-top: 10px;
     text-shadow: 1px 1px 1px black;
     font-weight: bold;
+    text-align: center;
 
 }
 
@@ -202,20 +210,23 @@ aside > input {
     margin: 10px;
 }
 
+/*caixa que contem os elementos principais*/
 #box {
+    position: absolute;
+    left: 55%;
+    transform: translate(-50%);
     display: flex;
     flex-flow: column nowrap;
-    width: 100vw;
+
     justify-content: center;
     align-items: center;
-    padding-left: 200px;
-    background-color: black;
 }
 
 #buttons {
+    color: white;
     display: flex;
     flex-flow: column nowrap;
-    background-color: yellow;
+    background-color: var(--cor4);
 
     
 
