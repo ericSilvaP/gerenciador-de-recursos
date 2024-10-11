@@ -184,10 +184,10 @@ th {
 
 /*elementos abaixo da tabela*/
 aside {
-    flex-basis: 500px;
     margin-top: 10px;
     text-shadow: 1px 1px 1px black;
     font-weight: bold;
+
 }
 
 aside > select {
@@ -199,12 +199,26 @@ aside > input {
     padding: 3.5px;
     font-weight: bolder;
     cursor: pointer;
+    margin: 10px;
 }
 
 #box {
     display: flex;
-    height: 100vh;
+    flex-flow: column nowrap;
     width: 100vw;
     justify-content: center;
+    align-items: center;
     padding-left: 200px;
+    background-color: black;
+}
+
+#buttons {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: yellow;
+
+    
+
+    padding: 40px;
+    border-radius: 25px;
 }
