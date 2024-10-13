@@ -29,13 +29,11 @@ div#burger {
 /*labels*/
 header {
     background-color: var(--cor4);
-    height: 50px;
 }
 
 div#labelvert, div#labelhori {
     background-color: var(--cor4);
     color: white;
-    
     font-size: 1.2em;
 }
 
@@ -166,11 +164,6 @@ tr#line7, tr#line8, tr#line11 {
     color: black;
 }
 
-tr#line9 {
-    background-color: darkorange;
-    cursor: default;
-}
-
 td {
     padding: 3.5px;
     border: 1px solid black;
@@ -227,9 +220,6 @@ aside > input {
     display: flex;
     flex-flow: column nowrap;
     background-color: var(--cor4);
-
-    
-
     padding: 40px;
     border-radius: 25px;
 }

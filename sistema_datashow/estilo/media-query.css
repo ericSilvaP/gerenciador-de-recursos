@@ -26,13 +26,13 @@
         justify-content: space-around;
     }
 
-    #labelhori > a {
+    #labelhori a {
         text-decoration: none;
         color: white;
         font-size: 30pt;
     }
 
-    #labelhori a:hover {
+    #labelhori span:hover {
         text-decoration: underline;
     }
 
@@ -40,5 +40,13 @@
         padding: 20px;
    }
 
- 
+    span.bt {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    #displayresources {
+        width: 500px;
+        height: 200px;
+    }
 }
