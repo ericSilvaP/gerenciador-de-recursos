@@ -7,7 +7,11 @@
 
     div#labelvert {
         display: none;
+    }
 
+    td, th {
+        min-width: 60px;
+        max-width: 1000px;
     }
 
     #box {
@@ -16,10 +20,12 @@
         transform: translate(0);
         justify-content: center;
         margin: 0;
+        padding: 30px;
 
     }
     
     div#labelhori {
+        
         display: flex;
         padding: 20px;
         text-align: center;
@@ -32,12 +38,18 @@
         font-size: 30pt;
     }
 
-    #labelhori span:hover {
-        text-decoration: underline;
+    
+    #labelhori a:hover{
+        color: lightblue;
+    }
+
+    #buttons, #displayresources {
+        min-width: 70%;
+
     }
 
    #buttons {
-        padding: 20px;
+        padding: 25px;
    }
 
     span.bt {
@@ -51,10 +63,9 @@
     }
 
     #buttons input {
+        
         padding: 5px;
         border-radius: 5px;
         font-size: large;
-       
-       
     }
 }

@@ -49,24 +49,6 @@ function clickTr() {
     }
 }
 
-function clickMenu() {
-    if (labelvert.style.display == "block") {
-        labelvert.style.display = "none"
-    } else {
-        labelvert.style.display = "block"
-    }
-}
-
-function mudaTamanho() {
-    if (window.innerWidth <= "500") {
-        burger.style.display = "block"
-        imenu.style.display = "none"
-    } else if (window.innerWidth > "500") {
-        burger.style.display = "none"
-        imenu.style.display = "flex"
-    }
-}
-
 // Obtém todas as linhas da tabela
 const rows = document.querySelectorAll('tbody tr');
 
@@ -92,9 +74,7 @@ function remove() {
 let removeButton = document.querySelector("input#rm")
 let negarButton = document.querySelector("input#rm1")
 let afirmButton = document.querySelector("input#rm2")
-let cancelButton = document.getElementById("cancel")
 
 removeButton.addEventListener('click', remove);
 negarButton.addEventListener('click', remove);
 afirmButton.addEventListener('click', remove);
-cancelButton.addEventListener('click', remove);
