@@ -59,7 +59,7 @@ confirmButton.addEventListener('click', function() {
 
         // Desabilita a linha para que não possa ser solicitado novamente
         selectedRow.classList.add("disabled");
-        selectedRow.style.backgroundColor = "yellow"; // Opcional: muda a cor de fundo para indicar que está desabilitado
+        selectedRow.style.backgroundColor = "rgb(248, 248, 91)"; // Opcional: muda a cor de fundo para indicar que está desabilitado
         
         alert(`${datashowName} agendado com sucesso!`); // Simulação de agendamento
     }
