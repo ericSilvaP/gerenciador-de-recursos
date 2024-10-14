@@ -18,12 +18,12 @@
 
 /*tags globais*/
 
-main {
-    display: flex;
+body {
+    background-color: white;
 }
 
-div#burger {
-    display: none;
+main {
+    display: flex;
 }
 
 /*labels*/
@@ -142,6 +142,10 @@ li > a {
     font-size: 1.1em;
     border: 2px solid black;
     margin: auto;
+}
+
+tr,th {
+    min-width: 100px;
 }
 
 tr {

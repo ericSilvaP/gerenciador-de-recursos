@@ -14,7 +14,7 @@
         position: relative;
         left: 0;
         transform: translate(0);
-        padding: 0 80px;
+        justify-content: center;
         margin: 0;
 
     }
@@ -46,7 +46,15 @@
     }
     
     #displayresources {
-        width: 500px;
-        height: 200px;
+       max-width: fit-content;
+       margin: 50px 40px;
+    }
+
+    #buttons input {
+        padding: 5px;
+        border-radius: 5px;
+        font-size: large;
+       
+       
     }
 }
