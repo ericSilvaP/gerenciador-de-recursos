@@ -31,7 +31,7 @@
             <div class="altBlock">
                 <div id="reser" class="alt" onclick="altTitle01()">Reservar</div>
                 <ul class="resitemsblock" id="altItems01">
-                    <li><a href="./index.html" ></a>>Datashows</a></li>
+                    <li><a href="./index.html" >>Datashows</a></li>
                    
                 </ul>
             </div>
@@ -53,37 +53,14 @@
             </div>
         </div>
 
-      
-        <!--
-        <section id="bloco">
-            <label for="buscatxt">Buscar</label>
-            <input type="text" name="buscatxt" id="buscatxt">
-
-            <div class="altBlock">
-                <div id="reser" class="alt">Reservar</div>
-                <ul class="resitemsblock">
-                    <li onclick="atual()">Datashows</li>
-                    <li>Salas</li>
-                    <li>Cabos</li>
-                </ul>
-            </div>
-            <div class="altBlock">
-                <div class="alt">Administração</div>
-                <ul class="resitemsblock">
-                    <li onclick="atual()">Datashows</li>
-                    <li>Salas</li>
-                    <li>Cabos</li>
-                </ul>
-            </div>
-        </section>
-        -->
-
         <div id="box">
             <section id="displayresources">
                 <table id="tabledisplayresources"  onclick="clickTr()">
-                    <thead id="line1" id="title">
-                        <th scope="col">Recurso</th>
-                        <th scope="col">Status</th>
+                    <thead id="title">
+                        <tr id="line1">
+                            <th scope="col">Recurso</th>
+                            <th scope="col">Status</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr id="line2" value="1">
@@ -124,32 +101,33 @@
                     <input type="date" name="inpdate" id="inpdate">
                 </aside>
                 <aside>
-                    <label for="selhor">Horário de início: </label>
+                    <label for="selhorini">Horário de início: </label>
                     <select name="selhorini" id="selhorini">
-                        <option value="">08:00</option>
-                        <option value="">09:00</option>
-                        <option value="">10:00</option>
-                        <option value="">11:00</option>
-                        <option value="">13:00</option>
-                        <option value="">14:00</option>
-                        <option value="">15:00</option>
-                        <option value="">16:00</option>
+                        <option value="08">08:00</option>
+                        <option value="09">09:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
                     </select>
+                </aside>
 
-                </aside>
                 <aside>
-                    <label for="selhor">Horário de entrega: </label>
+                    <label for="selhorfim">Horário de entrega: </label>
                     <select name="selhorfim" id="selhorfim">
-                        <option value="">08:00</option>
-                        <option value="">09:00</option>
-                        <option value="">10:00</option>
-                        <option value="">11:00</option>
-                        <option value="">13:00</option>
-                        <option value="">14:00</option>
-                        <option value="">15:00</option>
-                        <option value="">16:00</option>
+                        <option value="08">08:00</option>
+                        <option value="09">09:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
                     </select>
                 </aside>
+
                 <aside>
                     <input type="button" value="Solicitar">
                 </aside>
@@ -161,5 +139,6 @@
     <footer></footer>
 
     <script src="script.js"></script>
+    <script src="horarios.js"></script>
 </body>
 </html>
