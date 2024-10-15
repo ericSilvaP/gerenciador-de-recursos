@@ -10,7 +10,7 @@
     }
 
     td, th {
-        min-width: 60px;
+        min-width: 50px;
         max-width: 1000px;
     }
 
@@ -25,7 +25,6 @@
     }
     
     div#labelhori {
-        
         display: flex;
         padding: 20px;
         text-align: center;
@@ -37,7 +36,6 @@
         color: white;
         font-size: 30pt;
     }
-
     
     #labelhori a:hover{
         color: lightblue;
@@ -45,11 +43,10 @@
 
     #buttons, #displayresources {
         min-width: 70%;
-
     }
 
    #buttons {
-    margin: auto;
+        margin: auto;
         margin-top: 50px;
         padding: 25px;
    }
@@ -61,12 +58,12 @@
     
     #displayresources {
        max-width: fit-content;
-       margin: 50px 40px;
+       margin: 50px ;
        margin: auto;
+       padding: 20px;
     }
 
     #buttons input {
-        
         padding: 5px;
         border-radius: 5px;
         font-size: large;

@@ -122,11 +122,13 @@ li > a {
 }
 
 tr {
+    background-color: green;
     cursor: pointer;
 }
 
 tr:hover {
     transition: 300ms;
+    background-color: darkgreen;
 }
 
 td {
