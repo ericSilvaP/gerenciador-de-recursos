@@ -6,6 +6,7 @@
     <title>Agendamento</title>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/media-query.css">
+    <link rel="stylesheet" href="estilo/cancelar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
@@ -44,63 +45,74 @@
             
                 <table id="tabledisplayresources">
                     <thead>
-                        <th scope="col">Recurso</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Quem agendou</th>
-                        <th scope="col">Problema</th>
+                        <tr>
+                            <th scope="col">Recurso</th>
+                            <th scope="col">Status</th>
+                            <th scope="col" colspan="2">Quem agendou</th>
+                            <th scope="col">Problema</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr id="line2">
                             <td>Datashow 01</td>
-                            <td class="status">Disponível</td>
+                            <td class="status" value="0">Disponível</td>
+                            <td>--</td>
                             <td>--</td>
                             <td>--</td>
                         </tr>
                         <tr id="line3">
                             <td>Datashow 02</td>
-                            <td class="status">Disponível</td>
+                            <td class="status" value="0">Disponível</td>
+                            <td>--</td>
                             <td>--</td>
                             <td>--</td>
                         </tr>
                         <tr id="line4">
                             <td>Datashow 03</td>
-                            <td class="status">Disponível</td>
+                            <td class="status" value="0">Disponível</td>
+                            <td>--</td>
                             <td>--</td>
                             <td>--</td>
                         </tr>
                         <tr id="line5">
                             <td>Datashow 04</td>
-                            <td class="status">Disponível</td>
+                            <td class="status" value="1">Indisponível</td>
+                            <td>--</td>
                             <td>--</td>
                             <td>--</td>
                         </tr>
                         <tr id="line6">
                             <td>Datashow 05</td>
-                            <td class="status">Disponível</td>
+                            <td class="status" value="0">Disponível</td>
+                            <td>--</td>
                             <td>--</td>
                             <td>--</td>
                         </tr>
                         <tr id="line7">
                             <td>Datashow 06</td>
-                            <td class="status">Indisponível</td>
+                            <td class="status" value="1">Indisponível</td>
                             <td>Maria</td>
                             <td>--</td>
+                            <td></td>
                         </tr>
                         <tr id="line8">
                             <td>Datashow 07</td>
-                            <td class="status">Indisponível</td>
+                            <td class="status" value="1">Indisponível</td>
                             <td>José</td>
+                            <td>Ciências Biológicas</td>
                             <td>--</td>
                         </tr>
                         <tr id="line9">
                             <td>Datashow 08</td>
-                            <td class="status">Em manutenção</td>
+                            <td class="status" value="2">Em manutenção</td>
+                            <td>--</td>
                             <td>--</td>
                             <td>Faltando cabo</td>
                         </tr>
                         <tr id="line10">
                             <td>Datashow 09</td>
-                            <td class="status">Disponível</td>
+                            <td class="status" value="0">Disponível</td>
+                            <td>--</td>
                             <td>--</td>
                             <td>--</td>
                         </tr>
@@ -126,12 +138,21 @@
                     <input type="button" value="Atualizar Problema">
                 </aside>
                 <aside>
-                    <input type="button" value="Remover recurso" id="rm">
+                    <input type="button" value="Remover recurso" id="cancel">
                     <input type="button" value="Adicionar recurso">
                 </aside>
             </div>
         </div>
 
+        <div id="cancelModal" class="modal">
+            <div class="modal-content">
+              <p>Você tem certeza que quer remover?</p>
+              <button id="confirmCancel">Confirmar</button>
+              <button id="closeModal">Fechar</button>
+            </div>
+          </div>
+
     <script src="script.js"></script>
+    <script src="cancelar.js"></script>
 </body>
 </html>

@@ -34,21 +34,6 @@ function altTitle03() {
     }
 }
 
-function clickTr() {
-    let p = document.querySelectorAll("tr")
-    for (let c = 2; c <= 9; c++) {
-        
-        if (p[3].value){
-            window.alert("c")
-            p[3].value.value = 0
-            p[3].value.style.backgroundColor = "lightgreen"
-        } else {
-            p[3].value.value = 1
-            p[3].value.style.backgroundColor = "green"
-        }
-    }
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     // Seu código JavaScript aqui
     const rows = document.querySelectorAll('tbody tr');
@@ -71,10 +56,68 @@ function remove() {
     }
 }
 
-let removeButton = document.querySelector("input#rm")
-let negarButton = document.querySelector("input#rm1")
-let afirmButton = document.querySelector("input#rm2")
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona todas as células com a classe 'status'
+    const statusCells = document.querySelectorAll('td.status');
+    
+    // Loop através de cada célula de status
+    statusCells.forEach(cell => {
+        let statusValue = cell.getAttribute('value'); // Pega o valor do atributo 'value' da célula
+        
+        // Atualiza o texto e a cor da linha com base no valor do 'value'
+        switch(statusValue) {
+            case "0":
+                cell.textContent = "Disponível";
+                cell.parentElement.style.backgroundColor = "green"; // Muda a cor da linha para verde
+                break;
+            case "1":
+                cell.textContent = "Indisponível";
+                cell.parentElement.style.backgroundColor = "red"; // Muda a cor da linha para vermelho
+                break;
+            case "2":
+                cell.textContent = "Em manutenção";
+                cell.parentElement.style.backgroundColor = "orange"; // Muda a cor da linha para laranja
+                break;
+            default:
+                cell.textContent = "Desconhecido";
+                cell.parentElement.style.backgroundColor = "gray"; // Muda a cor da linha para cinza
+                break;
+        }
+        
+        // Adiciona os eventos de mouseover e mouseout para as linhas
+        cell.parentElement.addEventListener('mouseover', () => {
+            switch(statusValue) {
+                case '0': // Disponível
+                    cell.parentElement.style.backgroundColor = 'rgb(3, 97, 3)';
+                    break;
+                case '1': // Indisponível
+                    cell.parentElement.style.backgroundColor = 'rgb(218, 17, 17)';
+                    break;
+                case '2': // Em manutenção
+                    cell.parentElement.style.backgroundColor = 'rgb(197, 129, 3)';
+                    break;
+                default:
+                    cell.parentElement.style.backgroundColor = ''; // Reseta a cor
+            }
+        });
 
-removeButton.addEventListener('click', remove);
-negarButton.addEventListener('click', remove);
-afirmButton.addEventListener('click', remove);
+        cell.parentElement.addEventListener('mouseout', () => {
+            // Restaura a cor original baseada no status
+            switch(statusValue) {
+                case "0":
+                    cell.parentElement.style.backgroundColor = "green";
+                    break;
+                case "1":
+                    cell.parentElement.style.backgroundColor = "red";
+                    break;
+                case "2":
+                    cell.parentElement.style.backgroundColor = "orange";
+                    break;
+                default:
+                    cell.parentElement.style.backgroundColor = "gray";
+                    break;
+            }
+        });
+    });
+});
+
