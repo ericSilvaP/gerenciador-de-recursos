@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case "2":
                 cell.textContent = "Em manutenção";
-                cell.parentElement.style.backgroundColor = "orange"; // Muda a cor da linha para laranja
+                cell.parentElement.style.backgroundColor = "darkorange"; // Muda a cor da linha para laranja
                 break;
             default:
                 cell.textContent = "Desconhecido";

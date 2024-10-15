@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/cancelar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
@@ -34,7 +35,6 @@
             <div class="altBlock"></div>
                 <div class="alt">Notificações</div>
                 <ul class="resitemsblock" id="altItems03">
-                    <li><a href="">Devolução</a></li>
                     <li><a href="./agendados.html">Agendados</a></li>
                 </ul>
             </div>
@@ -44,11 +44,13 @@
             <section id="displayresources">
                 <table id="tabledisplayresources" >
                     <thead>
-                        <th scope="col">Recurso</th>
-                        <th scope="col">Data</th>
-                        <th scope="col">Hora</th>
-                        <th scope="col">Quem <br>solicitou</th>
-            
+                        <tr>
+                            <th scope="col">Recurso</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Hora</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Curso</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -56,6 +58,7 @@
                             <td>Hoje</td>
                             <td>10:00 - 12:00</td>
                             <td>Breno</td>
+                            <td>Ciência da Computação</td>
             
                         </tr>
                         <tr>
@@ -63,31 +66,36 @@
                             <td>Amanhã</td>
                             <td>12:00 - 14:00</td>
                             <td>José</td>
+                            <td>Ciências Biológicas</td>
             
                         </tr>
                         <tr>
                             <td>Datashow 5</td>
                             <td>Hoje</td>
                             <td>08:00 - 10:00</td>
-                            <td>Maria</td>
+                            <td>Jéssica</td>
+                            <td>Ciência da Computação</td>
                         </tr>
                         <tr></tr>
                             <td>Datashow 7</td>
                             <td>12/10/2024</td>
                             <td>10:00 - 12:00</td>
                             <td>João</td>
+                            <td>História</td>
                         </tr>
                         <tr>
                             <td>Datashow 8</td>
                             <td>02/12/2024</td>
                             <td>12:00 - 14:00</td>
                             <td>Pedro</td>
+                            <td>Letras</td>
                         </tr>
                         <tr>
                             <td>Datashow 10</td>
                             <td>15/10/2024</td>
                             <td>16:00 - 18:00</td>
                             <td>Maria</td>
+                            <td>Sistemas de Informação</td>
                         </tr>
                     </tbody>
                 </table>
@@ -96,20 +104,20 @@
             <div id="buttons">
                 <aside>
                     <input type="button" value="Aceitar">
-                    <input type="button" value="Negar" id="cancel">
+                    <input type="button" value="Negar">
                 </aside>
             </div>
         </div>
 
         <div id="cancelModal" class="modal">
             <div class="modal-content">
-              <p>Você tem certeza que quer cancelar?</p>
+              <p>Aceitar/negar solicitação?</p>
               <button id="confirmCancel">Confirmar</button>
               <button id="closeModal">Fechar</button>
             </div>
         </div>
 
     <script src="script.js"></script>
-    <script src="cancelar.js"></script>
+    <script src="nega.js"></script>
 </body>
 </html>

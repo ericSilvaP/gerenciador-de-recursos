@@ -215,3 +215,12 @@ aside > input {
     border-radius: 25px;
     margin-top: 50px;
 }
+
+#buttons input{
+    padding: 10px;
+}
+
+#buttons input:hover{
+    transition: 300ms;
+    background-color: #63605A;
+}
