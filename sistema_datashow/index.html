@@ -18,22 +18,24 @@
     <header>
         <nav>
             <div id="labelhori">
-                <span class="bt"><a href="" class="material-symbols-outlined">home</a>Login</span>
-                <span class="bt"><a href="agendados.html" class="material-symbols-outlined">notifications</a>Solicitações</span>
                 <span class="bt"><a href="index.html" class="material-symbols-outlined">add_circle</a>Agendar</span>
+                <span class="bt"><a href="agendados.html" class="material-symbols-outlined">notifications</a>Solicitações</span>
             </div>
         </nav>
     </header>
     <main>
         <div id="labelvert">
 
-            <input type="text" name="buscatxt" id="buscatxt" placeholder="Buscar funcionalidade">
-            <label for="buscatxt" class="material-symbols-outlined">search</label>
+            <div>
+                <input type="text" name="buscatxt" id="buscatxt">
+                <label for="buscatxt" class="material-symbols-outlined">search</label>
+            </div>
 
             <div class="altBlock">
                 <div id="reser" class="alt" onclick="altTitle01()">Reservar</div>
                 <ul class="resitemsblock" id="altItems01">
                     <li><a href="./index.html" >>Datashows</a></li>
+                    <li><a href="./agendados.html">Agendados</a></li>
                    
                 </ul>
             </div>
@@ -45,12 +47,6 @@
                     
                     <li><a href="./solicitacao.html">Solicitações</a></li>
                 </ul> 
-            </div>
-            <div class="altBlock">
-                <div class="alt" onclick="altTitle03()">Notificações</div>
-                <ul class="resitemsblock" id="altItems03">
-                    <li><a href="./agendados.html">Agendados</a></li>
-                </ul>
             </div>
         </div>
 
@@ -105,8 +101,8 @@
                 
             </section>
             
+            <p id="pro1" style="display: none;"></p>
             <div id="buttons">
-                <p id="pro" style="display: none;"></p>
                 <aside>
                     <label for="selhorini">Horário de início: </label>
                     <select name="selhorini" id="selhorini">
@@ -160,7 +156,7 @@
 
     <div id="confirmationModal" class="modal">
         <div class="modal-content">
-            <p>Problema enviado!</p>
+            <p>Solicitação concluída!</p>
             <button id="closeConfirmationModal">OK</button>
         </div>
     </div>
@@ -169,6 +165,5 @@
     <script src="horarios.js"></script>
     <script src="solicitar.js"></script>
     <script src="data.js"></script>
-    <script src="problemamodal.js"></script>
 </body>
 </html>

@@ -21,12 +21,26 @@ function closeModal() {
 
 // Abre a modal quando o botão de cancelar for clicado
 cancelButton.addEventListener('click', function() {
+  
   cancelModal.style.display = "block"; // Torna a modal visível imediatamente
   setTimeout(openModal, 10); // Aguarda um pequeno intervalo para garantir que a transição funcione
 });
 
 // Fecha a modal quando o botão "Fechar" for clicado
 closeModalButton.addEventListener('click', closeModal);
+
+
+function remove() {
+  const selectedRow = document.querySelector('tbody tr.selected');
+  if (selectedRow) {
+      naosel.style.display = "none";
+      selectedRow.remove(); // Remove a linha selecionada
+  } else {
+      naosel.innerText = "Nenhum datashow selecionado!"
+      naosel.style.display = "block";
+      naosel.style.color = "red"; 
+  }
+}
 
 // Confirma o cancelamento e chama a função remove
 confirmCancelButton.addEventListener('click', function() {

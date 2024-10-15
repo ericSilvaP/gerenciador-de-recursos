@@ -32,9 +32,12 @@ function getSelectedRow() {
 function handleOpenModal(buttonType) {
     const selectedRow = getSelectedRow();
     if (selectedRow) {
+        pro1.style.display = "none"
         openModal(); // Abre o modal de confirmação
     } else {
-        alert('Selecione um recurso antes de tentar ' + buttonType + '.');
+        pro1.style.display = "block"
+        pro1.style.color = "red"
+        pro1.innerText = 'Nenhum datashow selecionado!'; // Alerta caso nenhum datashow esteja selecionado
     }
 }
 

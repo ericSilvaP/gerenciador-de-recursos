@@ -13,13 +13,16 @@
     <main>
         <div id="labelvert">
             
-            <input type="text" name="buscatxt" id="buscatxt">
-            <label for="buscatxt" class="material-symbols-outlined">search</label>
+            <div>
+                <input type="text" name="buscatxt" id="buscatxt">
+                <label for="buscatxt" class="material-symbols-outlined">search</label>
+            </div>
 
             <div class="altBlock">
                 <div id="reser" class="alt" onclick="altTitle01()">Reservar</div>
                 <ul class="resitemsblock" id="altItems01">
                     <li><a href="./index.html">Datashows</a></li>
+                    <li><a href="./agendados.html">Agendados</a></li>
                     
                 </ul>
             </div>
@@ -29,12 +32,6 @@
                     <li><a href="./adm.html"></a>>Datashows</a></li>
                    
                     <li><a href="./solicitacao.html">Solicitações</a></li>
-                </ul>
-            </div>
-            <div class="altBlock"></div>
-                <div class="alt" onclick="altTitle03()">Notificações</div>
-                <ul class="resitemsblock" id="altItems03">
-                    <li><a href="./agendados.html">Agendados</a></li>
                 </ul>
             </div>
         </div>
@@ -126,8 +123,11 @@
                     </tbody>
                 </table>
             </section>
+
+            <p id="naosel" style="display: none;color: red;"></p>
+
             <div id="buttons">
-                <p id="naosel" style="display: none;"></p>
+               
                 <aside>
                     <select name="selStatus" id="selStatus">
                         <option value="a">Disponível</option>

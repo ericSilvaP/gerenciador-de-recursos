@@ -224,3 +224,7 @@ aside > input {
     transition: 300ms;
     background-color: #63605A;
 }
+
+#pro1, #naosel {
+    margin-top: 50px;
+}

@@ -29,17 +29,17 @@ requestButton.addEventListener('click', function() {
         const statusCell = selectedRow.cells[1]; // Obtém a célula de status
         // Verifica se o status é "Disponível"
         if (statusCell.textContent === "Disponível") {
-            pro.style.display = "none"
+            pro1.style.display = "none"
             const confirmationMessage = `Quer agendar o ${datashowName}?`;
             confirmModal.style.display = "block"; // Torna a modal visível
             setTimeout(() => openConfirmModal(confirmationMessage), 10); // Abre a modal
         } else {
-            pro.innerText = `${datashowName} já foi solicitado!`; // Alerta caso o datashow já esteja solicitado
+            pro1.innerText = `${datashowName} já foi solicitado!`; // Alerta caso o datashow já esteja solicitado
         }
     } else {
-        pro.style.display = "block"
-        pro.style.color = "red"
-        pro.innerText = 'Nenhum datashow selecionado!'; // Alerta caso nenhum datashow esteja selecionado
+        pro1.style.display = "block"
+        pro1.style.color = "red"
+        pro1.innerText = 'Nenhum datashow selecionado!'; // Alerta caso nenhum datashow esteja selecionado
     }
 });
 
@@ -61,10 +61,21 @@ confirmButton.addEventListener('click', function() {
         selectedRow.classList.add("disabled");
         selectedRow.classList.remove("selected");
 
-        alert(`${datashowName} agendado com sucesso!`); // Simulação de agendamento
+        
     }
     closeConfirmModal(); // Fecha a janela modal
+    confirmationModal.style.display = "block"; // Simulação de agendamento
+    confirmationModal.classList.remove("hide");  // Remove classe hide
+    confirmationModal.classList.add("show");     // Adiciona classe show para fade-in
 });
+
+closeConfirmationModal.addEventListener('click', function(){
+    confirmationModal.classList.remove("show");  // Remove classe show
+    confirmationModal.classList.add("hide");     // Adiciona classe hide
+    setTimeout(() => {
+        confirmationModal.style.display = "none";  // Após a transição, esconde a modal completamente
+    }, 500); // Aguardar o tempo da transição para esconder a modal
+})
 
 // Esconde a modal se clicar fora da janela modal
 window.addEventListener('click', function(event) {

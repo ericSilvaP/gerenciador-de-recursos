@@ -57,7 +57,7 @@ updateStatusButton.addEventListener('click', function() {
     // Verifica se há uma linha selecionada
     if (!selectedRow) {
         naosel.style.display = "block"
-        naosel.innerText = "Por favor, selecione um recurso para atualizar o status."; // Mensagem de alerta
+        naosel.innerText = "Nenhum datashow selecionado!"; // Mensagem de alerta
         return; // Não faz nada se nenhuma linha estiver selecionada
     }
 

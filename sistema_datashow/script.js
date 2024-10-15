@@ -2,7 +2,6 @@ var a = document.getElementsByClassName("alt")
 
 a[0].dataset.content = "▲"
 a[1].dataset.content = "▲"
-a[2].dataset.content = "▲"
 
 function altTitle01() {
     if (altItems01.style.display == "block") {
@@ -23,17 +22,6 @@ function altTitle02() {
         a[1].dataset.content = "▲"
     }
 }
-
-function altTitle03() {
-    if (altItems03.style.display == "block") {
-        altItems03.style.display = "none"
-        a[2].dataset.content = "▼"
-    } else {
-        altItems03.style.display = "block"
-        a[2].dataset.content = "▲"
-    }
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     const rows = document.querySelectorAll('tbody tr');
 
@@ -54,9 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
 function remove() {
     const selectedRow = document.querySelector('tbody tr.selected');
     if (selectedRow) {
+        naosel.style.display = "none";
         selectedRow.remove(); // Remove a linha selecionada
     } else {
-        alert('Nenhuma linha selecionada!');
+        naosel.innerText = "Nenhum datashow selecionado!"
+        naosel.style.display = "block";
+        naosel.style.color = "red"; 
     }
 }
 
