@@ -17,3 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Data selecionada:", formattedDate); // Para depuração
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dateInput = document.getElementById('inpdate');
+
+    // Abre o calendário quando o input é clicado
+    dateInput.addEventListener('click', function() {
+        this.showPicker(); // Isso abrirá o seletor de data
+    });
+});

@@ -103,11 +103,16 @@ article#data {
     padding: 10px;
 }
 
-input#inpdate {
+input[type="date"] {
+    text-align: center;
     border: none;
     color: white;
     background-color: rgba(240, 248, 255, 0);
     font-size: 20pt;
+}
+
+.custom-date::-webkit-calendar-picker-indicator {
+    display: none; /* Oculta o ícone padrão */
 }
 
 #displayresources {
@@ -117,7 +122,7 @@ input#inpdate {
     background-color: orange;
     border-radius: 25px;
     padding: 40px;
-    min-width: 300px;
+    min-width: 400px;
     box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.829);
     justify-content: center;
 }    

@@ -91,12 +91,25 @@
                         </tr>
                     </tbody>
                 </table>
-                <aside>
-                    <input type="button" value="Aceitar" id="rm2">
-                    <input type="button" value="Negar" id="rm1">
-                </aside>
             </section>
+
+            <div id="buttons">
+                <aside>
+                    <input type="button" value="Aceitar">
+                    <input type="button" value="Negar" id="cancel">
+                </aside>
+            </div>
         </div>
+
+        <div id="cancelModal" class="modal">
+            <div class="modal-content">
+              <p>Você tem certeza que quer cancelar?</p>
+              <button id="confirmCancel">Confirmar</button>
+              <button id="closeModal">Fechar</button>
+            </div>
+        </div>
+
     <script src="script.js"></script>
+    <script src="cancelar.js"></script>
 </body>
 </html>
