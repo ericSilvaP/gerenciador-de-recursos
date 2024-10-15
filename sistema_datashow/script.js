@@ -35,7 +35,6 @@ function altTitle03() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Seu código JavaScript aqui
     const rows = document.querySelectorAll('tbody tr');
 
     rows.forEach(row => {

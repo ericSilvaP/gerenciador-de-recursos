@@ -41,6 +41,12 @@
         </div>
 
         <div id="box">
+
+            <article id="data">
+                
+                <input type="date" name="inpdate" id="inpdate">
+            </article>
+
             <section id="displayresources">
             
                 <table id="tabledisplayresources">
@@ -122,21 +128,13 @@
             </section>
             <div id="buttons">
                 <aside>
-                    <label for="inpdate">Selecionar dia de agendamento: </label>
-                        <input type="date" name="inpdate" id="inpdate">
-                </aside>
-                <aside>
                     <select name="selStatus" id="selStatus">
                         <option value="a">Disponível</option>
-                        <option value="b">Indisponível</option>
-                        <option value="c">Em manutenção</option>
+                        <option value="b">Em manutenção</option>
                     </select>
                     <input type="button" value="Atualizar Status">
                 </aside>
-                <aside>
-                    <input type="text" name="txtProblem" id="txtProblem" placeholder="Informar problema">
-                    <input type="button" value="Atualizar Problema">
-                </aside>
+              
                 <aside>
                     <input type="button" value="Remover recurso" id="cancel">
                     <input type="button" value="Adicionar recurso">
@@ -152,7 +150,19 @@
             </div>
           </div>
 
+    <div id="problemModal" class="modal">
+        <div class="modal-content">
+            <p>Informa o problema:</p>
+            <input type="text" id="problemInput" placeholder="Descreva o problema">
+            <button id="submitProblem">Enviar</button>
+            <button id="closeProblemModal">Fechar</button>
+        </div>
+    </div>
+        
+    
     <script src="script.js"></script>
     <script src="cancelar.js"></script>
+    <script src="problemamodal.js"></script>
+
 </body>
 </html>

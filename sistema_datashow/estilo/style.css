@@ -2,11 +2,11 @@
 
 :root {
     --cor1: rgb(248, 248, 91);
-    --cor2: #EB018A;
-    --cor3: #CC02E3;
+    --cor2: #A38E6A;
+    --cor3: #E3B15B;
     --cor4: #073C73;
-    --cor5: #E30302;
-    --cor6: #D44EE3;
+    --cor5: #687A8E;
+    --cor6: #63605A;
 }
 
 /*tags globais*/
@@ -95,6 +95,21 @@ li > a {
 }
 
 /*display conteudo*/
+
+article#data {
+    margin: 25px 0;
+    background-color: var(--cor4);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input#inpdate {
+    border: none;
+    color: white;
+    background-color: rgba(240, 248, 255, 0);
+    font-size: 20pt;
+}
+
 #displayresources {
     display: flex;
     flex-flow: row wrap;   
