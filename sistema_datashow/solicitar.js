@@ -29,14 +29,17 @@ requestButton.addEventListener('click', function() {
         const statusCell = selectedRow.cells[1]; // Obtém a célula de status
         // Verifica se o status é "Disponível"
         if (statusCell.textContent === "Disponível") {
+            pro.style.display = "none"
             const confirmationMessage = `Quer agendar o ${datashowName}?`;
             confirmModal.style.display = "block"; // Torna a modal visível
             setTimeout(() => openConfirmModal(confirmationMessage), 10); // Abre a modal
         } else {
-            alert(`${datashowName} já foi solicitado!`); // Alerta caso o datashow já esteja solicitado
+            pro.innerText = `${datashowName} já foi solicitado!`; // Alerta caso o datashow já esteja solicitado
         }
     } else {
-        alert('Nenhum datashow selecionado!'); // Alerta caso nenhum datashow esteja selecionado
+        pro.style.display = "block"
+        pro.style.color = "red"
+        pro.innerText = 'Nenhum datashow selecionado!'; // Alerta caso nenhum datashow esteja selecionado
     }
 });
 
@@ -51,16 +54,13 @@ confirmButton.addEventListener('click', function() {
         const datashowName = datashowa.textContent; // Obtém o nome do datashow
         const statusCell = selectedRow.cells[1]; // Obtém a célula de status
 
-        datashowa.style.color = "red"
-
         // Muda o status para "Solicitado"
         statusCell.textContent = "Solicitado"; 
-        statusCell.style.color = "red"; // Opcional: muda a cor do texto para vermelho
 
         // Desabilita a linha para que não possa ser solicitado novamente
         selectedRow.classList.add("disabled");
-        selectedRow.style.backgroundColor = "rgb(248, 248, 91)"; // Opcional: muda a cor de fundo para indicar que está desabilitado
-        
+        selectedRow.classList.remove("selected");
+
         alert(`${datashowName} agendado com sucesso!`); // Simulação de agendamento
     }
     closeConfirmModal(); // Fecha a janela modal

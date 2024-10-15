@@ -50,3 +50,11 @@
     transition: 300ms;
     background-color: var(--cor2);
   }
+
+  .modal-content input[type="text"] {
+    font-size: 13pt;
+  }
+
+  p {
+    margin: 10px 0;
+  }

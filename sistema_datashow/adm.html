@@ -54,7 +54,8 @@
                         <tr>
                             <th scope="col">Recurso</th>
                             <th scope="col">Status</th>
-                            <th scope="col" colspan="2">Quem agendou</th>
+                            <th scope="col" >Nome</th>
+                            <th scope="col">Curso</th>
                             <th scope="col">Problema</th>
                         </tr>
                     </thead>
@@ -83,8 +84,8 @@
                         <tr id="line5">
                             <td>Datashow 04</td>
                             <td class="status" value="1">Indisponível</td>
-                            <td>--</td>
-                            <td>--</td>
+                            <td>João</td>
+                            <td>História</td>
                             <td>--</td>
                         </tr>
                         <tr id="line6">
@@ -98,8 +99,8 @@
                             <td>Datashow 06</td>
                             <td class="status" value="1">Indisponível</td>
                             <td>Maria</td>
+                            <td>Ciência da computação</td>
                             <td>--</td>
-                            <td></td>
                         </tr>
                         <tr id="line8">
                             <td>Datashow 07</td>
@@ -127,6 +128,7 @@
                 </table>
             </section>
             <div id="buttons">
+                <p id="naosel" style="display: none;"></p>
                 <aside>
                     <select name="selStatus" id="selStatus">
                         <option value="a">Disponível</option>
@@ -134,31 +136,37 @@
                     </select>
                     <input type="button" value="Atualizar Status">
                 </aside>
-              
                 <aside>
-                    <input type="button" value="Remover recurso" id="cancel">
                     <input type="button" value="Adicionar recurso">
+                    <input type="button" value="Remover recurso" id="cancel">
                 </aside>
             </div>
         </div>
 
-        <div id="cancelModal" class="modal">
-            <div class="modal-content">
-              <p>Você tem certeza que quer remover?</p>
-              <button id="confirmCancel">Confirmar</button>
-              <button id="closeModal">Fechar</button>
-            </div>
-          </div>
+    <div id="cancelModal" class="modal">
+        <div class="modal-content">
+            <p>Você tem certeza que quer remover?</p>
+            <button id="confirmCancel">Confirmar</button>
+            <button id="closeModal">Fechar</button>
+        </div>
+    </div>
 
     <div id="problemModal" class="modal">
         <div class="modal-content">
-            <p>Informa o problema:</p>
+            <p>Informe o problema:</p>
+            <p id="pro"></p>
             <input type="text" id="problemInput" placeholder="Descreva o problema">
             <button id="submitProblem">Enviar</button>
             <button id="closeProblemModal">Fechar</button>
         </div>
     </div>
-        
+
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <p>Problema enviado!</p>
+            <button id="closeConfirmationModal">OK</button>
+        </div>
+    </div>
     
     <script src="script.js"></script>
     <script src="cancelar.js"></script>

@@ -136,6 +136,12 @@ input[type="date"] {
     border: 2px solid black;
 }
 
+.disabeld, .disabled:hover {
+    background-color: green !important;
+    color: white !important;
+    cursor: default;
+}
+
 .selected, .selected:hover {
     background-color: white !important;
     color: black !important;
