@@ -53,11 +53,6 @@ div#labelvert {
     vertical-align: middle;
 }
 
-.material-symbols-outlined:hover {
-    color: lightgray;
-    transition: 300ms;
-}
-
 /*conteudo*/
 /*menu bloco*/
 div#reser {
